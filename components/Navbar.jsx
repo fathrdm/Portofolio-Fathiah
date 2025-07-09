@@ -1,52 +1,61 @@
 import { useState, useEffect } from "react";
+import { X, Menu } from "lucide-react";
 
+const Navlinks = () => {
+    return (
+        <>
+            <li className="text-lg font-medium border border-transparent hover:border-green-700 rounded-md p-2">
+                <a href="">Beranda</a>
+            </li>
+            <li className="text-lg font-medium border border-transparent hover:border-green-700 rounded-md p-2">
+                <a href="">Tentang</a>
+            </li>
+            <li className="text-lg font-medium border border-transparent hover:border-green-700 rounded-md p-2">
+                <a href="">Proyek</a>
+            </li>
+            <li className="text-lg font-medium border border-transparent hover:border-green-700 rounded-md p-2">
+                <a href="">Kontak</a>
+            </li>
+        </>
+    );
+};
 
 const Navbar = () => {
     const [active, setActive] = useState(false);
-    useEffect(() => {
-        const handleScroll = () => {
-            if (window.scrollY > 150) {
-                setActive(true);
-            } else {
-                setActive(false);
-            }
-        };
 
-        window.addEventListener("scroll", handleScroll);
-
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
+    const toggleNavbar = () => {
+        setActive(!active);
+    };
 
     return (
-        <div className="navbar items-center py-7 flex justify-between text-white">
+        <div className="navbar items-center py-7 flex justify-between text-white relative">
+            {/* Logo */}
             <div className="logo">
-                <h1 className="text-3xl font-bold ">
-                    Portofolio
-                </h1>
+                <h1 className="text-3xl font-bold">Portofolio</h1>
             </div>
-            <ul className={`menu flex items-center gap-5 md:static fixed left-1/2 -translate-x-1/2
-                    md:translate-x-0 md:opacity-100 transition-all duration-300 ease-in-out
-                    ${active ? "top-0 opacity-100" : "-top-10 opacity-0"}`}>
-                <li className="text-lg font-medium border border-transparent hover:border-green-700 rounded-md p-2">
-                    <a href="">Beranda</a>
-                </li>
-                <li className="text-lg font-medium border border-transparent hover:border-green-700 rounded-md p-2">
-                    <a href="">Tentang</a>
-                </li>
-                <li className="text-lg font-medium border border-transparent hover:border-green-700 rounded-md p-2">
-                    <a href="">Proyek</a>
-                </li>
-                <li className="text-lg font-medium border border-transparent hover:border-green-700 rounded-md p-2">
-                    <a href="">Kontak</a>
-                </li>
+
+            {/* Toggle Button */}
+            <div className="toggle md:hidden">
+                <button onClick={toggleNavbar}>
+                    {active ? <X></X> : <Menu></Menu>}
+                </button>
+            </div>
+
+            {/* Menu */}
+            <ul
+                className={`menu md:flex items-center gap-5 absolute md:static left-0 w-full md:w-auto bg-green-950 md:bg-transparent px-5 py-4 
+                transition-all duration-300 ease-in-out ${
+                    active ? "top-20 opacity-100" : "-top-96 opacity-0"
+                } md:opacity-100 md:top-auto`}
+            >
+                <Navlinks />
             </ul>
         </div>
-    )
-}
+    );
+};
 
-export default Navbar
+export default Navbar;
+
 
 // pakai 'rafce' biar langsung eksport dari components
 
