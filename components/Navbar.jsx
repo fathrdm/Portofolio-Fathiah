@@ -22,14 +22,32 @@ const Navlinks = () => {
 
 const Navbar = () => {
     const [active, setActive] = useState(false);
+    const [isScroll, setScroll] = useState(false);
+
 
     const toggleNavbar = () => {
         setActive(!active);
     };
 
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 150) {
+                setScroll(true);
+            } else {
+                setScroll(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
+
     return (
-        <div className="navbar items-center py-7 flex justify-between text-white relative">
-            {/* Logo */}
+        <div className={`navbar sticky top-0 items-center py-7 px-3 md:px-0 flex justify-between text-white relative ${isScroll ? "bg-white/5 backdrop-blur-xl" : ""}`}>            {/* Logo */}
             <div className="logo">
                 <h1 className="text-3xl font-bold">Portofolio</h1>
             </div>
@@ -43,10 +61,9 @@ const Navbar = () => {
 
             {/* Menu */}
             <ul
-                className={`menu md:flex items-center gap-5 absolute md:static left-0 w-full md:w-auto bg-green-950 md:bg-transparent px-5 py-4 
-                transition-all duration-300 ease-in-out ${
-                    active ? "top-20 opacity-100" : "-top-96 opacity-0"
-                } md:opacity-100 md:top-auto`}
+                className={`menu z-10 md:flex items-center gap-5 absolute md:static left-0 w-full md:w-auto bg-white/10 backdrop-blur-3xl md:bg-transparent px-5 py-4 
+                transition-all duration-300 ease-in-out ${active ? "top-20 opacity-100" : "-top-96 opacity-0"
+                    } md:opacity-100 md:top-auto`}
             >
                 <Navlinks />
             </ul>
@@ -55,6 +72,9 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+{/* <div className= "navbar sticky top-0 items-center py-7 flex justify-between text-white relative "> */ }
 
 
 // pakai 'rafce' biar langsung eksport dari components

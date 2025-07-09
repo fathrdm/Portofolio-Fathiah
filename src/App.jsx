@@ -1,12 +1,19 @@
-
-
+import DataImage from "./data";
 function App() {
 
   return (
     <>
-      <h1 className="text-blue-700">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-
-</h1>
+      <div className="hero grid grid-cols-1 sm:grid-cols-2 md:gap-10 gap-0 items-center relative">
+        <div>
+          <div className="ucapanHalo border  border-amber-200 flex items-center">
+            <h4 className="text-white text-lg  drop-shadow-2xl">Haloo</h4>
+            <hr className="border-t border-gray-300 my-4" />
+          </div>
+          <h1 className="text-white text-2xl font-bold">I Am Fathiah Nuraisyah Radam</h1>
+          <h5 className="text-white">Senang berkenalan dengan anda, semoga kita sukses selalu. Dihindari dari orang orang yang jahat dan jadii kayaa.</h5>
+        </div>
+        <img src={DataImage.HeroImage} alt="hero image" className="border ml-auto border-green-900 py-4 rounded-3xl" />
+      </div>
     </>
   )
 }
