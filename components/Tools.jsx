@@ -5,8 +5,8 @@ const Tools = () => {
 
         <div className="grid mt-25 grid-cols-1 gap-5">
             <div>
-                <h1 className="text-xl text-center text-white">Tools</h1>
-                <h3 className="text-sm text-center text-white">Tools yang saya gunakan untuk membuat project </h3>
+                <h1 className="text-xl text-center text-white">Projects</h1>
+                <h3 className="text-sm text-center text-white">Bebera projek yang </h3>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                 {listTools.map((tool) => (
