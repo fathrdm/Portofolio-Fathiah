@@ -26,20 +26,19 @@ const Navbar = () => {
                     Portofolio
                 </h1>
             </div>
-            <ul className={`menu flex items-center gap-10 md:static fixed left-1/2 -translate-x-1/2
-                    md:translate-x-0 md:opacity-100 bg-white/30 backdrop-blur-md p-4
-                    rounded-br-2xl rounded-bl-2xl transition-all duration-300 ease-in-out
+            <ul className={`menu flex items-center gap-5 md:static fixed left-1/2 -translate-x-1/2
+                    md:translate-x-0 md:opacity-100 transition-all duration-300 ease-in-out
                     ${active ? "top-0 opacity-100" : "-top-10 opacity-0"}`}>
-                <li className="text-lg font-medium">
+                <li className="text-lg font-medium border border-transparent hover:border-green-700 rounded-md p-2">
                     <a href="">Beranda</a>
                 </li>
-                <li className="text-lg font-medium">
+                <li className="text-lg font-medium border border-transparent hover:border-green-700 rounded-md p-2">
                     <a href="">Tentang</a>
                 </li>
-                <li className="text-lg font-medium">
+                <li className="text-lg font-medium border border-transparent hover:border-green-700 rounded-md p-2">
                     <a href="">Proyek</a>
                 </li>
-                <li className="text-lg font-medium">
+                <li className="text-lg font-medium border border-transparent hover:border-green-700 rounded-md p-2">
                     <a href="">Kontak</a>
                 </li>
             </ul>
