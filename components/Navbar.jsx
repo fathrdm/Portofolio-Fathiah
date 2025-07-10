@@ -13,9 +13,6 @@ const Navlinks = () => {
             <li className="text-lg font-medium border border-transparent hover:border-green-700 rounded-md p-2">
                 <a href="">Proyek</a>
             </li>
-            <li className="text-lg font-medium border border-transparent hover:border-green-700 rounded-md p-2">
-                <a href="">Kontak</a>
-            </li>
         </>
     );
 };
@@ -47,7 +44,7 @@ const Navbar = () => {
 
 
     return (
-        <div className={`navbar sticky top-0 items-center py-7 px-3 md:px-0 flex justify-between text-white relative ${isScroll ? "bg-white/5 backdrop-blur-xl" : ""}`}>            {/* Logo */}
+        <div className={`navbar sticky top-0 items-center py-5 md:py-3 px-3 md:px-0 flex justify-between text-white relative ${isScroll ? "bg-white/5 backdrop-blur-3xl" : ""}`}>            {/* Logo */}
             <div className="logo">
                 <h1 className="text-3xl font-bold">Portofolio</h1>
             </div>
@@ -61,7 +58,7 @@ const Navbar = () => {
 
             {/* Menu */}
             <ul
-                className={`menu z-10 md:flex items-center gap-5 absolute md:static left-0 w-full md:w-auto bg-white/10 backdrop-blur-3xl md:bg-transparent px-5 py-4 
+                className={`menu z-10 md:flex items-center gap-5 absolute left-0 md:static z-20 w-full md:w-auto bg-white/10  md:bg-transparent py-4 
                 transition-all duration-300 ease-in-out ${active ? "top-20 opacity-100" : "-top-96 opacity-0"
                     } md:opacity-100 md:top-auto`}
             >
