@@ -18,6 +18,8 @@ import Tools9 from "/assets/tools/unity.png";
 import Tools10 from "/assets/tools/canva.png";
 import Tools11 from "/assets/tools/figma.png";
 import Tools12 from "/assets/tools/c-sharp.png";
+import Tools13 from "/assets/tools/Vuforia.png";
+import Tools14 from "/assets/tools/visual studio.png";
 
 export const listTools = [
   {
@@ -102,32 +104,47 @@ export const listTools = [
     gambar: Tools12,
     nama: "C#",
     ket: "Language",
-    dad: "1100",
+    dad: "1200",
+  },
+  {
+    id: 13,
+    gambar: Tools13,
+    nama: "Vuforia",
+    ket: "SDK",
+    dad: "1300",
+  }, {
+    id: 14,
+    gambar: Tools14,
+    nama: "Visual Studio",
+    ket: "Code Editor",
+    dad: "1300",
   },
 ];
 
-import Proyek1 from "/assets/proyek/proyek1.webp";
-import Proyek2 from "/assets/proyek/proyek2.webp";
+import Proyek1 from "/assets/proyek/proyek1.png";
+import Proyek2 from "/assets/proyek/proyek2.png";
 import Proyek3 from "/assets/proyek/proyek3.webp";
 import Proyek4 from "/assets/proyek/proyek4.webp";
 import Proyek5 from "/assets/proyek/proyek5.webp";
 import Proyek6 from "/assets/proyek/proyek6.webp";
+import Proyek7 from "/assets/proyek/proyekAR.png";
+import Proyek8 from "/assets/proyek/proyekFigma.png";
 
 export const listProyek = [
   {
     id: 1,
     gambar: Proyek1,
-    nama: "Website Sekolah",
-    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["HTML", "CSS", "Javascript", "AOS"],
+    nama: "The Legend Of South Coast",
+    desk: "Programmer",
+    tools: ["Unity", "Github", "Visual Studio"],
     dad: "200",
   },
   {
     id: 2,
     gambar: Proyek2,
-    nama: "Company Profile",
-    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["HTML", "CSS", "Javascript", "AOS", "Swiper", "Lightbox Gallery"],
+    nama: "Bubble Gun",
+    desk: "Programmer",
+    tools: ["Unity", "Github", "Visual Studio"],
     dad: "300",
   },
   {
@@ -160,6 +177,22 @@ export const listProyek = [
     nama: "Company Profile 2.0",
     desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
     tools: ["NextJS", "TailwindCSS", "Framermotion"],
+    dad: "700",
+  },
+    {
+    id: 7,
+    gambar: Proyek7,
+    nama: "Banua Music",
+    desk: "Programmer",
+    tools: ["Vuforia SDK", "Visual Studio", "Unity"],
+    dad: "700",
+  },
+      {
+    id: 8,
+    gambar: Proyek8,
+    nama: "Emergency Fire Response System",
+    desk: "UI Designer",
+    tools: ["Figma"],
     dad: "700",
   },
 ];

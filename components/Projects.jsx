@@ -23,7 +23,7 @@ const Projects = () => {
               {/* Posisi */}
               <div className="flex flex-wrap gap-2">
                 <User className="text-white"></User>
-                <p className="text-white ">{tool.nama}</p>
+                <p className="text-white ">{tool.desk}</p>
               </div>
 
               {/*deretan tools yang digunakan*/}
