@@ -5,7 +5,7 @@ import { useState } from "react";
 const Sertifikat = () => {
     return (
 
-        <div className="grid grid-cols-1 mt-25">
+        <div className="grid grid-cols-1 mt-25" id="sertif">
             <div className="grid grid-cols-1 gap-5">
                 <h1 className="text-4xl text-center text-green-500 font-bold">Sertifikat</h1>
                 <h3 className="text-sm text-center text-white">Beberapa sertifikat yang telah saya dapatkan</h3>

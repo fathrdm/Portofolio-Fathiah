@@ -125,11 +125,9 @@ export const listTools = [
 import Proyek1 from "/assets/proyek/proyek1.png";
 import Proyek2 from "/assets/proyek/proyek2.png";
 import Proyek3 from "/assets/proyek/proyek3.png";
-import Proyek4 from "/assets/proyek/proyek4.webp";
-import Proyek5 from "/assets/proyek/proyek5.webp";
-import Proyek6 from "/assets/proyek/proyek6.webp";
 import Proyek7 from "/assets/proyek/proyekAR.png";
 import Proyek8 from "/assets/proyek/proyekFigma.png";
+import Proyek9 from "/assets/proyek/proyekblender.png";
 
 export const listProyek = [
   {
@@ -139,6 +137,7 @@ export const listProyek = [
     desk: "Programmer",
     deskrispi: "The Legend of South Coast merupakan Game yang dikembangkan sebagai bagian dari proyek capstone program MSIB",
     tools: ["Unity", "Github", "Visual Studio"],
+    git: "https://github.com/fathrdm/Capstone-Project.git",
     link: "https://dark-myth-studio.itch.io/the-legend-of-south-coast",
     dad: "200",
   },
@@ -149,6 +148,7 @@ export const listProyek = [
     desk: "Programmer",
     deskrispi: "Bubble Gun merupakan Game yang dikembangkan dalam 48 jam pada ajang Global Game Jam Bandung 2025",
     tools: ["Unity", "Github", "Visual Studio"],
+    git: "https://github.com/fathrdm/GLOBAL-GAME-JAM.git",
     link: "https://globalgamejam.org/games/2025/bubble-gun-1-0",
     dad: "300",
   },
@@ -159,6 +159,8 @@ export const listProyek = [
     desk: "Programmer",
     deskrispi: "Pong merupakan Game yang dikembangkan sebagai bagian dari project akhir salah satu mata kuliah program MSIB",
     tools: ["Unity", "Github", "Visual Studio"],
+    git: "",
+
     link: "https://bonniethedestroy.itch.io/gamepong",
     dad: "300",
   },
@@ -169,6 +171,8 @@ export const listProyek = [
     desk: "Programmer",
     deskrispi: "Banua Music merupakan aplikasi dengan teknologi Augmented Reality yang dibuat untuk memenuhi mata kuliah Virtual dan Augmented Reality",
     tools: ["Vuforia SDK", "Visual Studio", "Unity"],
+    git: "https://github.com/fathrdm/KELOMPOK-5-ARVR.git",
+
     link: "https://music-banua.itch.io/music-banua-augmented-reality",
     dad: "700",
   },
@@ -178,12 +182,27 @@ export const listProyek = [
     nama: "Emergency Fire Response System",
     desk: "UI Designer",
     deskrispi: "Emergency Fire Response System merupakan desain yang dibuat menggunakan figma untuk memenuhi mata kuliah Desain Pengalaman Pengguna",
+    git: "",
+    link: "",
     tools: ["Figma"],
     dad: "700",
-  },
+  }
+  ,
+  {
+    id: 9,
+    gambar: Proyek9,
+    nama: "3D Object Blender",
+    desk: "3D Desaigner",
+    deskrispi: "3D Object Blender merupakan sebuah proyek pembuatan objek tiga dimensi menggunakan software Blender",
+    git: "",
+    link: "",
+    tools: ["Blender"],
+    dad: "700",
+  }
 ];
 
 
+import ser0 from "../assets/sertifikat/0.png";
 import ser1 from "../assets/sertifikat/1.png";
 import ser2 from "../assets/sertifikat/2.png";
 import ser3 from "../assets/sertifikat/3.png";
@@ -202,6 +221,7 @@ import ser15 from "../assets/sertifikat/15.png";
 import ser16 from "../assets/sertifikat/16.png";
 
 export const lisSertifikat = [
+  { id: 0, gambar: ser0 },
   { id: 1, gambar: ser1 },
   { id: 2, gambar: ser2 },
   { id: 3, gambar: ser3 },
@@ -219,3 +239,29 @@ export const lisSertifikat = [
   { id: 15, gambar: ser15 },
   { id: 16, gambar: ser16 },
 ];
+
+import k1 from "../assets/tools/k1.png";
+import k2 from "../assets/tools/k2.png";
+import k3 from "../assets/tools/github.png";
+// import k4 from "../assets/tools/k4.png";
+// import k5 from "../assets/tools/k5.png";
+// import k6 from "../assets/tools/k6.png";
+
+export const listKontak = [
+  {
+    id: 1,
+    icon: k1,
+    link: "https://www.linkedin.com/in/fathiah-nuraisyah-radam-b0a738311/"
+  },
+  {
+    id: 2,
+    icon: k2,
+    link: "https://www.instagram.com/fath_rdm/?__pwa=1",
+  },
+  {
+    id: 3,
+    icon: k3,
+    link: "https://github.com/fathrdm",
+  }
+];
+  

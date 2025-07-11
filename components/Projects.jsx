@@ -22,7 +22,7 @@ const Projects = () => {
     <div className="grid mt-25 grid-cols-1 gap-5" id="projects">
       <div className="grid grid-cols-1 gap-5">
         <h1 className="text-4xl text-center text-green-500 font-bold">PROYEK</h1>
-        <h3 className="text-sm text-center text-white">Saya membuat dan berpartisipasi dalam beberapa projek berikut</h3>
+        <h3 className="text-sm text-center text-white">Saya membuat dan berpartisipasi dalam beberapa proyek berikut</h3>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {listProyek.map((tool) => (
@@ -62,33 +62,35 @@ const Projects = () => {
               {/*deretan tools yang digunakan*/}
               <div className="flex flex-wrap gap-2 text-sm">
                 {tool.tools.map((tool, index) => (
-                  <div key={index} className="border border-green-900 rounded-sm w-fit p-2 h-fit text-white">
+                  <div key={index} className="bg-green-900 rounded-sm w-fit p-2 h-fit text-white">
                     {tool}
                   </div>
                 ))}
               </div>
 
               {/* Tombol ke websitenya */}
-              <div className="flex flex-wrap gap-3 mt-auto lg:flex-nowrap">
+              <div className="grid grid-cols-1 gap-3 mt-auto xl:grid-cols-2">
 
                 {/* github */}
-                <div className=" bg-transparant text-center w-full text-white p-3 rounded-md border hover:bg-zinc-600">
+
+                <a href={tool.git} className="bg-transparant text-center w-full text-white p-3 rounded-md border hover:bg-zinc-600">
                   <div className="flex">
                     <img src={selectedTool.gambar} alt="" className="w-7 h-7 " />
                     <button className="w-full text items-center ">
-                      <a href="" className="">Github</a>
+                      Github
                     </button>
                   </div>
-                </div>
+                </a>
+
                 {/* Web */}
-                <div className=" bg-transparant text-center border-green-700 w-full text-white p-3 rounded-md border hover:bg-green-700">
+                <a href={tool.link} className="bg-transparant text-center border-green-700 w-full text-white p-3 rounded-md border hover:bg-green-700">
                   <div className="flex">
                     <img src={Website} alt="" className="w-7 h-7  border-green-900" />
                     <button className="w-full border-green-700 text items-center ">
-                      <a href="" className="">Kunjungi</a>
+                      Kunjungi
                     </button>
                   </div>
-                </div>
+                </a>
               </div>
 
             </div>
