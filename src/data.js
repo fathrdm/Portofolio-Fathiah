@@ -243,7 +243,7 @@ export const lisSertifikat = [
 import k1 from "../assets/tools/k1.png";
 import k2 from "../assets/tools/k2.png";
 import k3 from "../assets/tools/github.png";
-// import k4 from "../assets/tools/k4.png";
+import k4 from "../assets/tools/k4.png";
 // import k5 from "../assets/tools/k5.png";
 // import k6 from "../assets/tools/k6.png";
 
@@ -263,5 +263,11 @@ export const listKontak = [
     icon: k3,
     link: "https://github.com/fathrdm",
   }
+  ,
+  {
+    id: 4,
+    icon: k4,
+    link: "https://wa.me/qr/PIKZAYZ6QMEEA1",
+  }
 ];
-  
+
