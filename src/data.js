@@ -182,3 +182,6 @@ export const listProyek = [
     dad: "700",
   },
 ];
+
+
+import ser1 from "../assets/sertifikat/53"
