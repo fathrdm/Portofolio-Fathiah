@@ -76,7 +76,7 @@ export const listTools = [
     id: 8,
     gambar: Tools8,
     nama: "Github",
-    ket: "Repository",
+    ket: "Code Hosting",
     dad: "800",
   },
   {
@@ -97,7 +97,7 @@ export const listTools = [
     id: 11,
     gambar: Tools11,
     nama: "Figma",
-    ket: "Design App",
+    ket: "Design Tool",
     dad: "1100",
   },
   {
@@ -111,7 +111,7 @@ export const listTools = [
     id: 13,
     gambar: Tools13,
     nama: "Vuforia",
-    ket: "SDK",
+    ket: "AR SDK",
     dad: "1300",
   }, {
     id: 14,
