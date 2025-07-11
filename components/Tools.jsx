@@ -3,10 +3,10 @@ import { listTools } from "../src/data";
 const Tools = () => {
     return (
 
-        <div className="grid mt-25 grid-cols-1 gap-5">
-            <div>
-                <h1 className="text-4xl text-center text-green-500">PROJECTS</h1>
-                <h3 className="text-sm text-center text-white">Bebera projek yang </h3>
+        <div className="grid mt-25 grid-cols-1 gap-5" id="tools">
+            <div className="grid grid-cols-1 gap-5">
+                <h1 className="text-4xl text-center text-green-500 font-bold">TOOLS</h1>
+                <h3 className="text-sm text-center text-white">Beberapa tools yang saya kuasai dan saya gunakan untuk membuat projek</h3>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                 {listTools.map((tool) => (

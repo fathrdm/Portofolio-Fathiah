@@ -1,4 +1,6 @@
 import { listProyek } from "../src/data";
+import { listTools } from "../src/data";
+import Website from "../assets/tools/web.png"
 import { User, ChevronDown, ChevronUp } from "lucide-react";
 import { useState } from "react";
 const Projects = () => {
@@ -10,17 +12,21 @@ const Projects = () => {
   const aktifID = (id) => {
     setIsOpen(isOpen == id ? null : id)
   }
+  const toolId = 8;
+  const selectedTool = listTools.find((tool) => tool.id === toolId);
 
+  const toolId15 = 15;
+  const selectedTool15 = listTools.find((tool) => tool.id === toolId15);
   return (
 
-    <div className="grid mt-25 grid-cols-1 gap-5">
-      <div>
-        <h1 className="text-4xl text-center text-white">Tools</h1>
-        <h3 className="text-sm text-center text-white">Tools yang saya gunakan untuk membuat project </h3>
+    <div className="grid mt-25 grid-cols-1 gap-5" id="projects">
+      <div className="grid grid-cols-1 gap-5">
+        <h1 className="text-4xl text-center text-green-500 font-bold">PROYEK</h1>
+        <h3 className="text-sm text-center text-white">Saya membuat dan berpartisipasi dalam beberapa projek berikut</h3>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {listProyek.map((tool) => (
-          <div key={tool.id} className="bg-zinc-800 rounded-lg hover:shadow-[2px_2px_2px_2px_#d1d3d4] transition duration-300 flex flex-col h-full">
+          <div key={tool.id} className="bg-zinc-800 rounded-lg hover:shadow-xl transition duration-300 flex flex-col h-full">
 
             {/* gambar */}
             <img src={tool.gambar} alt={tool.nama} className="w-full rounded-t-lg" />
@@ -50,7 +56,7 @@ const Projects = () => {
               {isOpen && (
                 <div className={`transition-all text-white text-sm duration-500 ease-in-out overflow-hidden ${isOpen === tool.id ? "max-h-40 opacity-100 mt-2" : "max-h-0 opacity-0"
                   }`}>
-                  Proyek ini dibangun dengan Bootstrap 5, menggunakan Animate On Scroll, preloader, dan responsif untuk semua perangkat.
+                  {tool.deskrispi}
                 </div>
               )}
               {/*deretan tools yang digunakan*/}
@@ -63,9 +69,28 @@ const Projects = () => {
               </div>
 
               {/* Tombol ke websitenya */}
-              <button className="bg-green-900 ml-auto mt-auto text-white p-3 rounded-md hover:bg-green-500">
-                Kunjungi
-              </button>
+              <div className="flex flex-wrap gap-3 mt-auto lg:flex-nowrap">
+
+                {/* github */}
+                <div className=" bg-transparant text-center w-full text-white p-3 rounded-md border hover:bg-zinc-600">
+                  <div className="flex">
+                    <img src={selectedTool.gambar} alt="" className="w-7 h-7 " />
+                    <button className="w-full text items-center ">
+                      <a href="" className="">Github</a>
+                    </button>
+                  </div>
+                </div>
+                {/* Web */}
+                <div className=" bg-transparant text-center border-green-700 w-full text-white p-3 rounded-md border hover:bg-green-700">
+                  <div className="flex">
+                    <img src={Website} alt="" className="w-7 h-7  border-green-900" />
+                    <button className="w-full border-green-700 text items-center ">
+                      <a href="" className="">Kunjungi</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         ))}

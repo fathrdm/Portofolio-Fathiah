@@ -20,6 +20,7 @@ import Tools11 from "/assets/tools/figma.png";
 import Tools12 from "/assets/tools/c-sharp.png";
 import Tools13 from "/assets/tools/Vuforia.png";
 import Tools14 from "/assets/tools/visual studio.png";
+import Tools15 from "/assets/tools/web.png";
 
 export const listTools = [
   {
@@ -123,7 +124,7 @@ export const listTools = [
 
 import Proyek1 from "/assets/proyek/proyek1.png";
 import Proyek2 from "/assets/proyek/proyek2.png";
-import Proyek3 from "/assets/proyek/proyek3.webp";
+import Proyek3 from "/assets/proyek/proyek3.png";
 import Proyek4 from "/assets/proyek/proyek4.webp";
 import Proyek5 from "/assets/proyek/proyek5.webp";
 import Proyek6 from "/assets/proyek/proyek6.webp";
@@ -136,7 +137,9 @@ export const listProyek = [
     gambar: Proyek1,
     nama: "The Legend Of South Coast",
     desk: "Programmer",
+    deskrispi: "The Legend of South Coast merupakan Game yang dikembangkan sebagai bagian dari proyek capstone program MSIB",
     tools: ["Unity", "Github", "Visual Studio"],
+    link: "https://dark-myth-studio.itch.io/the-legend-of-south-coast",
     dad: "200",
   },
   {
@@ -144,54 +147,37 @@ export const listProyek = [
     gambar: Proyek2,
     nama: "Bubble Gun",
     desk: "Programmer",
+    deskrispi: "Bubble Gun merupakan Game yang dikembangkan dalam 48 jam pada ajang Global Game Jam Bandung 2025",
     tools: ["Unity", "Github", "Visual Studio"],
+    link: "https://globalgamejam.org/games/2025/bubble-gun-1-0",
     dad: "300",
   },
   {
     id: 3,
     gambar: Proyek3,
-    nama: "Web Pernikahan 2.0",
-    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["Vite", "ReactJS", "TailwindCSS", "AOS"],
-    dad: "400",
+    nama: "Pong",
+    desk: "Programmer",
+    deskrispi: "Pong merupakan Game yang dikembangkan sebagai bagian dari project akhir salah satu mata kuliah program MSIB",
+    tools: ["Unity", "Github", "Visual Studio"],
+    link: "https://bonniethedestroy.itch.io/gamepong",
+    dad: "300",
   },
   {
-    id: 4,
-    gambar: Proyek4,
-    nama: "Website Course",
-    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["Vite", "ReactJS", "Bootstrap", "AOS"],
-    dad: "500",
-  },
-  {
-    id: 5,
-    gambar: Proyek5,
-    nama: "Web Portfolio",
-    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["HTML", "CSS", "Javascript", "Bootsrap"],
-    dad: "600",
-  },
-  {
-    id: 6,
-    gambar: Proyek6,
-    nama: "Company Profile 2.0",
-    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["NextJS", "TailwindCSS", "Framermotion"],
-    dad: "700",
-  },
-    {
     id: 7,
     gambar: Proyek7,
     nama: "Banua Music",
     desk: "Programmer",
+    deskrispi: "Banua Music merupakan aplikasi dengan teknologi Augmented Reality yang dibuat untuk memenuhi mata kuliah Virtual dan Augmented Reality",
     tools: ["Vuforia SDK", "Visual Studio", "Unity"],
+    link: "https://music-banua.itch.io/music-banua-augmented-reality",
     dad: "700",
   },
-      {
+  {
     id: 8,
     gambar: Proyek8,
     nama: "Emergency Fire Response System",
     desk: "UI Designer",
+    deskrispi: "Emergency Fire Response System merupakan desain yang dibuat menggunakan figma untuk memenuhi mata kuliah Desain Pengalaman Pengguna",
     tools: ["Figma"],
     dad: "700",
   },

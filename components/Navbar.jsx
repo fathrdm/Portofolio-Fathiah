@@ -5,13 +5,16 @@ const Navlinks = () => {
     return (
         <>
             <li className="text-lg font-medium border border-transparent hover:border-green-700 rounded-md p-2">
-                <a href="">Beranda</a>
+                <a href="#">Beranda</a>
             </li>
             <li className="text-lg font-medium border border-transparent hover:border-green-700 rounded-md p-2">
-                <a href="">Tentang</a>
+                <a href="#about">Tentang</a>
             </li>
             <li className="text-lg font-medium border border-transparent hover:border-green-700 rounded-md p-2">
-                <a href="">Proyek</a>
+                <a href="#tools">Tools</a>
+            </li>
+            <li className="text-lg font-medium border border-transparent hover:border-green-700 rounded-md p-2">
+                <a href="#projects">Proyek</a>
             </li>
         </>
     );
@@ -46,7 +49,7 @@ const Navbar = () => {
     return (
         <div className={`navbar sticky top-0 items-center py-5 md:py-3 px-3 md:px-0 flex justify-between text-white relative ${isScroll ? "bg-white/5 backdrop-blur-3xl" : ""}`}>            {/* Logo */}
             <div className="logo">
-                <h1 className="text-3xl font-bold">Portofolio</h1>
+                <h1 className="text-3xl font-bold text-green-600">Portofolio</h1>
             </div>
 
             {/* Toggle Button */}

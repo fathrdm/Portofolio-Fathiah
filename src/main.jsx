@@ -6,6 +6,7 @@ import Navbar from '../components/navbar.jsx'
 import About from '../components/About.jsx'
 import Tools from '../components/Tools.jsx'
 import Projects from '../components/Projects.jsx'
+import Sertifikat from '../components/Sertifikat.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <div className='container mx-auto px-5 lg:px-30'>
@@ -14,6 +15,7 @@ createRoot(document.getElementById('root')).render(
       <About/>
       <Tools/>
       <Projects/>
+      <Sertifikat/>
     </div>
   </StrictMode>,
 )
