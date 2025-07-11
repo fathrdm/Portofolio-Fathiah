@@ -184,4 +184,38 @@ export const listProyek = [
 ];
 
 
-import ser1 from "../assets/sertifikat/53"
+import ser1 from "../assets/sertifikat/1.png";
+import ser2 from "../assets/sertifikat/2.png";
+import ser3 from "../assets/sertifikat/3.png";
+import ser4 from "../assets/sertifikat/4.png";
+import ser5 from "../assets/sertifikat/5.png";
+import ser6 from "../assets/sertifikat/6.png";
+import ser7 from "../assets/sertifikat/7.png";
+import ser8 from "../assets/sertifikat/8.png";
+import ser9 from "../assets/sertifikat/9.png";
+import ser10 from "../assets/sertifikat/10.png";
+import ser11 from "../assets/sertifikat/11.png";
+import ser12 from "../assets/sertifikat/12.png";
+import ser13 from "../assets/sertifikat/13.png";
+import ser14 from "../assets/sertifikat/14.png";
+import ser15 from "../assets/sertifikat/15.png";
+import ser16 from "../assets/sertifikat/16.png";
+
+export const lisSertifikat = [
+  { id: 1, gambar: ser1 },
+  { id: 2, gambar: ser2 },
+  { id: 3, gambar: ser3 },
+  { id: 4, gambar: ser4 },
+  { id: 5, gambar: ser5 },
+  { id: 6, gambar: ser6 },
+  { id: 7, gambar: ser7 },
+  { id: 8, gambar: ser8 },
+  { id: 9, gambar: ser9 },
+  { id: 10, gambar: ser10 },
+  { id: 11, gambar: ser11 },
+  { id: 12, gambar: ser12 },
+  { id: 13, gambar: ser13 },
+  { id: 14, gambar: ser14 },
+  { id: 15, gambar: ser15 },
+  { id: 16, gambar: ser16 },
+];
