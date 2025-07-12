@@ -12,7 +12,7 @@ import Sertifikat from '../components/Sertifikat.jsx'
 createRoot(document.getElementById('root')).render(
   <>
     <Router>
-      <div className='container mx-auto px-5 lg:px-30'>
+      <div className='container bg-amber-400 mx-auto px-5 lg:px-30'>
         <Navbar />
         <App />
         <About />
