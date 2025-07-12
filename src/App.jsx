@@ -1,7 +1,7 @@
 import DataImage from "./data";
 import { listKontak } from "../src/data";
 
-function App() {
+export default function App() {
 
   return (
     <>
@@ -29,4 +29,4 @@ function App() {
   )
 }
 
-export default App
+// export default App
