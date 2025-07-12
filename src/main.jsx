@@ -10,7 +10,7 @@ import Tools from '../components/Tools.jsx'
 import Projects from '../components/Projects.jsx'
 import Sertifikat from '../components/Sertifikat.jsx'
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
+  <>
     <Router>
       <div className='container mx-auto px-5 lg:px-30'>
         <Navbar />
@@ -22,5 +22,5 @@ createRoot(document.getElementById('root')).render(
       </div>
 
     </Router>
-  </StrictMode>,
+  </>,
 )
