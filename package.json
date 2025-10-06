@@ -19,6 +19,9 @@
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.6.3"
   },
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "^4.24.0"
+  },
   "devDependencies": {
     "@eslint/js": "^9.29.0",
     "@types/react": "^19.1.8",
@@ -37,8 +40,5 @@
   "engines": {
     "node": "20.x",
     "npm": "10.x"
-  },
-  "optionalDependencies": {
-    "@rollup/rollup-linux-x64-gnu": "^4.24.0"
   }
 }
