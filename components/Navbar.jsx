@@ -52,7 +52,7 @@ const Navbar = () => {
     return (
         <div className={`navbar sticky top-0 items-center py-5 md:py-3 px-3 md:px-0 flex justify-between text-white relative ${isScroll ? "bg-white/5 backdrop-blur-3xl" : ""}`}>            {/* Logo */}
             <div className="logo">
-                <a href="" className="text-3xl font-bold text-green-600">Portfolio</a>
+                <a href="" className="text-3xl font-bold text-green-600">Portofolio</a>
             </div>
 
             {/* Toggle Button */}

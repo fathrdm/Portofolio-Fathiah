@@ -4,7 +4,7 @@ import { HashRouter as Router } from 'react-router-dom';
 
 import './index.css'
 import App from './App.jsx'
-import Navbar from '../components/navbar.jsx'
+import Navbar from '../components/Navbar.jsx'
 import About from '../components/About.jsx'
 import Tools from '../components/Tools.jsx'
 import Projects from '../components/Projects.jsx'
@@ -12,7 +12,7 @@ import Sertifikat from '../components/Sertifikat.jsx'
 createRoot(document.getElementById('root')).render(
   <>
     <Router>
-      <div className='container bg-amber-400 mx-auto px-5 lg:px-30'>
+      <div className='container mx-auto px-5 lg:px-30'>
         <Navbar />
         <App />
         <About />
@@ -20,7 +20,6 @@ createRoot(document.getElementById('root')).render(
         <Projects />
         <Sertifikat />
       </div>
-
     </Router>
   </>,
 )

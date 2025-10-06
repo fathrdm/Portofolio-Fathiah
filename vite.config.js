@@ -1,9 +1,8 @@
+// vite.config.ts/js
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite'
-
-// https://vite.dev/config/
+const isNetlify = !!process.env.NETLIFY
 export default defineConfig({
-  base: '/Portofolio-Fathiah/',
-  plugins: [react(), tailwindcss()],
+  plugins: [react()],
+  base: isNetlify ? '/' : '/Portofolio-Fathiah/'
 })
