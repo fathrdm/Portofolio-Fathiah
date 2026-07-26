@@ -18,7 +18,7 @@ import Tools9 from "/assets/tools/unity.png";
 import Tools10 from "/assets/tools/canva.png";
 import Tools11 from "/assets/tools/figma.png";
 import Tools12 from "/assets/tools/c-sharp.png";
-import Tools13 from "/assets/tools/Vuforia.png";
+import Tools13 from "/assets/tools/vuforia.png";
 import Tools14 from "/assets/tools/visual studio.png";
 import Tools15 from "/assets/tools/web.png";
 
